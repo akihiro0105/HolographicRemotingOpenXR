@@ -8,6 +8,8 @@
     - Mixed Reality Toolkit Standardassets 2.8.0
     - Mixed Reality OpenXR Plugin 1.4.1
 
+- OpenXRのインポートに失敗する場合には`MixedRealityFeatureTool`のキャッシュを削除して再ダウンロード
+
 - MRTKの設定からOpenXRを選択
     ![alt](./document/01.png)
 
