@@ -1,0 +1,14 @@
+{
+    "name": "com.akihiro.holographicremoting",
+    "version": "1.0.0",
+    "displayName": "com.akihiro.holographicremoting",
+    "description": "com.akihiro.holographicremoting",
+    "unity": "2020.3",
+    "samples": [
+        {
+            "displayName": "Sample",
+            "description": "Sample",
+            "path": "Samples"
+        }
+    ]
+}

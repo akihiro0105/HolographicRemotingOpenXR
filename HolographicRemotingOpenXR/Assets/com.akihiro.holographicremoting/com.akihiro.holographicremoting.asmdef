@@ -1,0 +1,16 @@
+{
+    "name": "com.akihiro.holographicremoting",
+    "rootNamespace": "",
+    "references": [
+        "GUID:3b76ab8242cc35d479edf0a949d56d59"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
