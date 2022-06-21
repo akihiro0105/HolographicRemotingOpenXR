@@ -23,3 +23,12 @@
 - HoloLens 2アプリと同様に `MixedRealityToolkit`のシーン設定を行う
 - HolographicRemoting用に `HolographicRemoting` プレハブをシーンに追加
 - ![alt](./document/02.png)
+
+# UPM
+- https
+    - `git+https://github.com/akihiro0105/HolographicRemotingOpenXR.git?path=/HolographicRemotingOpenXR/Assets/com.akihiro.holographicremoting/`
+
+or
+
+- ssh
+    - `git+ssh://git@github.com/akihiro0105/HolographicRemotingOpenXR.git?path=/HolographicRemotingOpenXR/Assets/com.akihiro.holographicremoting/`
