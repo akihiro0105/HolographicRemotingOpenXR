@@ -7,7 +7,6 @@ namespace Microsoft.MixedReality.OpenXR.BasicSample
 {
     public class AppRemotingSample : MonoBehaviour
     {
-        [SerializeField] private GameObject connectSettingUI = null;
         [SerializeField] private InputField textInput = null;
         [SerializeField] private Text outputText = null;
         [SerializeField] private Button connectButton = null;
@@ -20,7 +19,8 @@ namespace Microsoft.MixedReality.OpenXR.BasicSample
             if (Application.isEditor)
             {
                 gameObject.SetActive(false);
-                connectSettingUI.SetActive(false);
+                textInput.gameObject.SetActive(false);
+                connectButton.gameObject.SetActive(false);
                 return;
             }
             // 既にHolographicRemoting実行中か確認
@@ -35,7 +35,8 @@ namespace Microsoft.MixedReality.OpenXR.BasicSample
                     {
                         gameObject.SetActive(false);
                     }
-                    connectSettingUI.SetActive(false);
+                    textInput.gameObject.SetActive(false);
+                    connectButton.gameObject.SetActive(false);
                     return;
                 }
             }
@@ -48,13 +49,15 @@ namespace Microsoft.MixedReality.OpenXR.BasicSample
         private void Update()
         {
             var ip = $"{remotingConfiguration.RemoteHostName}:{remotingConfiguration.RemotePort}";
-            connectSettingUI.SetActive(true);
+            textInput.gameObject.SetActive(true);
+            connectButton.gameObject.SetActive(true);
             if (Remoting.AppRemoting.TryGetConnectionState(out Remoting.ConnectionState connectionState, out Remoting.DisconnectReason disconnectReason))
             {
                 switch (connectionState)
                 {
                     case Remoting.ConnectionState.Connected:
-                        connectSettingUI.SetActive(false);
+                        textInput.gameObject.SetActive(false);
+                        connectButton.gameObject.SetActive(false);
                         outputText.text = $"Connected to {ip}.";
                         break;
                     case Remoting.ConnectionState.Connecting:
